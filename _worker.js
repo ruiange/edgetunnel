@@ -2460,6 +2460,7 @@ function 创建下行Grain发送器(webSocket, headerData = null) {
 	};
 }
 
+
 async function connectStreams(remoteSocket, webSocket, headerData, retryFunc) {
 	let header = headerData, hasData = false, reader, useBYOB = false;
 	const BYOB单次读取上限 = 64 * 1024;
